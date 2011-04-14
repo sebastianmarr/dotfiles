@@ -6,6 +6,7 @@ alias x="exit"
 alias aci="ack -i"
 alias m="mate"
 alias rmr="rm -rf"
+alias c="cd"
 
 # commands starting with % for pasting from web
 alias %=' '
