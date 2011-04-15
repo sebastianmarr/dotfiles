@@ -8,5 +8,8 @@ alias m="mate"
 alias rmr="rm -rf"
 alias c="cd"
 
+# ruby and rails
+alias rspec="rspec --color"
+
 # commands starting with % for pasting from web
 alias %=' '
