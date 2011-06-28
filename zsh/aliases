@@ -8,6 +8,7 @@ alias m="mate"
 alias rmr="rm -rf"
 alias c="cd"
 alias o="open"
+alias r="ruby"
 
 # ruby and rails
 alias rspec="rspec --color"
