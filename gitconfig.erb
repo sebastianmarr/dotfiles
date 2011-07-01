@@ -3,13 +3,16 @@
 	email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
 [alias]
 	co = checkout
+	ci = commit
+	st = status
+	br = branch
 [color]
 	diff = auto
 	status = auto
 	branch = auto
 [core]
 	excludesfile = <%= ENV['HOME'] %>/.gitignore
-	editor = mate_wait
+	editor = mate -w
 	autocrlf = input
 [apply]
 	whitespace = nowarn
