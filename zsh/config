@@ -4,7 +4,8 @@ autoload -U ~/.zsh/functions/*(:t)
 
 # options
 setopt PROMPT_SUBST
-unsetopt beep
+setopt correctall
+setopt autocd
 
 # environment variables
 export EDITOR="mate -w"
