@@ -3,13 +3,26 @@ fpath=(~/.zsh/functions $fpath)
 autoload -U ~/.zsh/functions/*(:t)
 
 # options
-setopt PROMPT_SUBST
+setopt prompt_subst
 setopt correctall
 setopt autocd
 
+# source control info
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git # only git for the moment
+zstyle ':vcs_info:git:*' formats '%F{1}[%F{2}%b%F{1}]%f' # git branch format
+
+# run vcs_info before the prompt is displayed
+precmd() {
+  vcs_info
+}
+
 # environment variables
 export EDITOR="mate -w"
-export PROMPT='%n@%m: %3~ $(prompt_symbol) '
+
+# prompt
+export PROMPT='%n@%m: %F{2}%3~ %F{1}$(prompt_symbol)%f '
+export RPROMPT='${vcs_info_msg_0_}'
 
 # history
 HISTFILE=~/.zsh_history
