@@ -10,7 +10,10 @@ setopt autocd
 # source control info
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git # only git for the moment
-zstyle ':vcs_info:git:*' formats '%F{1}[%F{2}%b%F{1}]%f' # git branch format
+zstyle ':vcs_info:git:*' check-for-changes true # dirty indicators
+zstyle ':vcs_info:git:*' stagedstr '%F{2}● ' # staged changes in repo
+zstyle ':vcs_info:git:*' unstagedstr '%F{2}○ ' # unstaged changes
+zstyle ':vcs_info:git:*' formats '%u%c%F{red}[%F{green}%b%F{red}]%f' # git format
 
 # run vcs_info before the prompt is displayed
 precmd() {
