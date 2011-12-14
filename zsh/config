@@ -10,9 +10,9 @@ setopt autocd
 # source control info
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git # only git for the moment
-zstyle ':vcs_info:git:*' check-for-changes true # dirty indicators
-zstyle ':vcs_info:git:*' stagedstr '%F{green}● ' # staged changes in repo
-zstyle ':vcs_info:git:*' unstagedstr '%F{red}● ' # unstaged changes
+zstyle ':vcs_info:*' check-for-changes true # dirty indicators
+zstyle ':vcs_info:*' stagedstr '%F{green}● ' # staged changes in repo
+zstyle ':vcs_info:*' unstagedstr '%F{red}● ' # unstaged changes
 
 # run vcs_info before the prompt is displayed and check for untracked files
 precmd() {
@@ -26,7 +26,7 @@ precmd() {
     CUSTOM_GIT_PROMPT_FORMAT='%F{red}○ '$CUSTOM_GIT_PROMPT_FORMAT
   }
   
-  zstyle ':vcs_info:git:*' formats $CUSTOM_GIT_PROMPT_FORMAT
+  zstyle ':vcs_info:*' formats $CUSTOM_GIT_PROMPT_FORMAT
 
   vcs_info
 }
