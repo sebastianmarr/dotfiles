@@ -11,6 +11,9 @@ alias o="open"
 alias r="ruby"
 alias g="git"
 
+# simple http server
+alias serve="python -m SimpleHTTPServer"
+
 # ruby and rails
 alias rspec="rspec --color"
 
