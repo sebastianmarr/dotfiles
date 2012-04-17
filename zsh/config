@@ -26,7 +26,10 @@ precmd() {
     CUSTOM_GIT_PROMPT_FORMAT='%F{red}○ '$CUSTOM_GIT_PROMPT_FORMAT
   }
   
+  ACTION_PROMPT_FORMAT=$CUSTOM_GIT_PROMPT_FORMAT' %F{magenta}%a'
+  
   zstyle ':vcs_info:*' formats $CUSTOM_GIT_PROMPT_FORMAT
+  zstyle ':vcs_info:*' actionformats $ACTION_PROMPT_FORMAT
 
   vcs_info
 }
