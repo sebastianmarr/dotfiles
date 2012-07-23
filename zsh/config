@@ -14,7 +14,7 @@ select-word-style bash
 
 # source control info
 autoload -Uz vcs_info
-zstyle ':vcs_info:*' enable git # only git for the moment
+zstyle ':vcs_info:*' enable git hg svn # only git for the moment
 zstyle ':vcs_info:*' check-for-changes true # dirty indicators
 zstyle ':vcs_info:*' stagedstr '%F{green}● ' # staged changes in repo
 zstyle ':vcs_info:*' unstagedstr '%F{red}● ' # unstaged changes
