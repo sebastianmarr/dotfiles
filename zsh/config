@@ -8,6 +8,10 @@ setopt prompt_subst
 setopt correctall
 setopt autocd
 
+# bash-like word movement
+autoload -U select-word-style
+select-word-style bash
+
 # source control info
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git # only git for the moment
