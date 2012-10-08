@@ -43,8 +43,7 @@ precmd() {
 export EDITOR="mate -w"
 
 # prompt
-export PROMPT='
-%F{2}%5~
+export PROMPT='%F{2}%5~
 %f%n@%m %F{1}$(prompt_symbol)%f '
 export RPROMPT='${vcs_info_msg_0_}'
 
