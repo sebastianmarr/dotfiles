@@ -8,7 +8,6 @@ alias m="mate"
 alias rmr="rm -rf"
 alias c="cd"
 alias o="open"
-alias r="ruby"
 alias g="git"
 
 # simple http server
