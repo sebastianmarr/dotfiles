@@ -40,7 +40,7 @@ precmd() {
 }
 
 # environment variables
-export EDITOR="mate -w"
+export EDITOR="vim"
 
 # prompt
 export PROMPT='%F{2}%5~
