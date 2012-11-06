@@ -1,6 +1,6 @@
 [user]
-	name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
-	email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+	name = Sebastian Marr
+	email = sbstnmrr@googlemail.com
 [alias]
 	u = checkout
 	c = commit
@@ -14,7 +14,7 @@
 	status = auto
 	branch = auto
 [core]
-	excludesfile = <%= ENV['HOME'] %>/.gitignore
+	excludesfile = ~/.gitignore
 	editor = vim
 	autocrlf = input
 [apply]

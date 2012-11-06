@@ -1,0 +1,8 @@
+[ui]
+username = Sebastian Marr <sbstnmrr@googlemail.com>
+ignore = ~/.hgignore
+
+[extensions]
+graphlog = 
+purge = 
+color =
