@@ -3,9 +3,10 @@
 
 set nocompatible                  " Must come first because it changes other options.
 
-colorscheme Tomorrow-Night
+syntax enable
+set background=dark
+colorscheme solarized
 
-syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
 runtime macros/matchit.vim        " Load the matchit plugin.
