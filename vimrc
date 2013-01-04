@@ -5,7 +5,7 @@ set nocompatible                  " Must come first because it changes other opt
 
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme monokai
 
 filetype plugin indent on         " Turn on file type detection.
 
