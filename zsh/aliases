@@ -4,11 +4,11 @@ alias ll="ls -l"
 alias la="ls -lA"
 alias x="exit"
 alias aci="ack -i"
-alias m="mate"
 alias rmr="rm -rf"
 alias c="cd"
 alias o="open"
 alias g="git"
+alias e="subl -n"
 
 # simple http server
 alias serve="python -m SimpleHTTPServer"
