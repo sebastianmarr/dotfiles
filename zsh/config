@@ -17,28 +17,17 @@ select-word-style bash
 
 # source control info
 autoload -Uz vcs_info
-zstyle ':vcs_info:*' enable git hg svn # only git for the moment
+zstyle ':vcs_info:*' enable git hg svn
 zstyle ':vcs_info:*' check-for-changes true # dirty indicators
 zstyle ':vcs_info:*' stagedstr '%F{green}● ' # staged changes in repo
 zstyle ':vcs_info:*' unstagedstr '%F{red}● ' # unstaged changes
+CUSTOM_GIT_PROMPT_FORMAT='%u%c%F{red}[%F{green}%b%F{red}]%f'
+ACTION_PROMPT_FORMAT=$CUSTOM_GIT_PROMPT_FORMAT' %F{magenta}%a'
+zstyle ':vcs_info:*' formats $CUSTOM_GIT_PROMPT_FORMAT
+zstyle ':vcs_info:*' actionformats $ACTION_PROMPT_FORMAT
 
 # run vcs_info before the prompt is displayed and check for untracked files
 precmd() {
-
-  # git prompt info format
-  CUSTOM_GIT_PROMPT_FORMAT='%u%c%F{red}[%F{green}%b%F{red}]%f'
-  
-  # check for untracked files in directory
-  if [[ -z $(git ls-files --other --exclude-standard 2> /dev/null) ]] {
-  } else {
-    CUSTOM_GIT_PROMPT_FORMAT='%F{red}○ '$CUSTOM_GIT_PROMPT_FORMAT
-  }
-  
-  ACTION_PROMPT_FORMAT=$CUSTOM_GIT_PROMPT_FORMAT' %F{magenta}%a'
-  
-  zstyle ':vcs_info:*' formats $CUSTOM_GIT_PROMPT_FORMAT
-  zstyle ':vcs_info:*' actionformats $ACTION_PROMPT_FORMAT
-
   vcs_info
 }
 
@@ -47,7 +36,7 @@ export EDITOR="vim"
 
 # prompt
 export PROMPT='%F{2}%5~
-%f%n@%m %F{1}$(prompt_symbol)%f '
+%f%n@%m %F{1}%%%f '
 export RPROMPT='${vcs_info_msg_0_}'
 
 # history
