@@ -33,6 +33,7 @@ precmd() {
 
 # environment variables
 export EDITOR="vim"
+export GREP_OPTIONS='--color=auto'
 
 # prompt
 export PROMPT='%F{2}%5~
