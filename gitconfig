@@ -2,6 +2,7 @@
 	name = Sebastian Marr
 	email = sbstnmrr@googlemail.com
 [alias]
+	a = add
 	u = checkout
 	c = commit
 	s = status
@@ -9,6 +10,7 @@
 	l = log
 	lg = log --graph --all
 	dt = difftool
+	mt = mergetool
 [color]
 	diff = auto
 	status = auto
