@@ -9,6 +9,7 @@ alias c="cd"
 alias o="open"
 alias g="git"
 alias e="subl -n"
+alias s="ssh"
 
 # simple http server
 alias serve="python -m SimpleHTTPServer"
