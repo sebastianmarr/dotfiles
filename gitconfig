@@ -23,3 +23,5 @@
 	whitespace = nowarn
 [format]
 	pretty = %C(yellow)%h%C(green)%d%Creset %s %C(red)(%cr)%Creset
+[push]
+	default = current
