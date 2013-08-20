@@ -25,3 +25,5 @@
 	pretty = %C(yellow)%h%C(green)%d%Creset %s %C(red)(%cr) %C(bold blue)<%aN>%Creset
 [push]
 	default = current
+[help]
+	autocorrect = 1
