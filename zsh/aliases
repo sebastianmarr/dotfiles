@@ -19,3 +19,6 @@ alias rspec="rspec --color"
 
 # commands starting with % for pasting from web
 alias %=' '
+
+# tell sudo to respect aliases
+alias sudo='sudo '
