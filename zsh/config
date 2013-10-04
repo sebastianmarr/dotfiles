@@ -37,7 +37,6 @@ if [ $SSH_CONNECTION ]; then tmux set-option status-bg blue &> /dev/null; fi
 # environment variables
 export EDITOR="vim"
 export GREP_OPTIONS='--color=auto'
-export TAR_OPTIONS="--use-compress-program=pigz"
 
 # prompt
 export PROMPT='%F{2}%5~
