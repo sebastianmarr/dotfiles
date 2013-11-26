@@ -5,7 +5,7 @@
 	a = add
 	u = checkout
 	c = commit
-	s = status
+	s = status -s
 	b = branch
 	l = log
 	lg = log --graph --all
