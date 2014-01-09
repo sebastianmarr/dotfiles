@@ -7,8 +7,8 @@
 	c = commit
 	s = status -s
 	b = branch
-	l = log
-	lg = log --graph --all
+	l = log --pretty='%C(yellow)%h%C(green)%d%Creset %s %C(red)(%cr) %C(bold blue)<%aN>%Creset'
+	lg = log --pretty='%C(yellow)%h%C(green)%d%Creset %s %C(red)(%cr) %C(bold blue)<%aN>%Creset' --graph --all
 	dt = difftool
 	mt = mergetool
 [color]
@@ -21,8 +21,6 @@
 	autocrlf = input
 [apply]
 	whitespace = nowarn
-[format]
-	pretty = %C(yellow)%h%C(green)%d%Creset %s %C(red)(%cr) %C(bold blue)<%aN>%Creset
 [push]
 	default = current
 [help]
