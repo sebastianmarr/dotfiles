@@ -1,12 +1,13 @@
 [user]
 	name = Sebastian Marr
-	email = mail@sebastianmarr.de
 [alias]
 	a = add
 	u = checkout
 	c = commit
 	s = status -s
 	b = branch
+	work = config user.email "marr@spreadshirt.net"
+	private = config user.email "mail@sebastianmarr.de"
 	l = log --pretty='%C(yellow)%h%C(green)%d%Creset %s %C(red)(%cr) %C(bold blue)<%aN>%Creset'
 	lg = log --pretty='%C(yellow)%h%C(green)%d%Creset %s %C(red)(%cr) %C(bold blue)<%aN>%Creset' --graph --all
 	dt = difftool
