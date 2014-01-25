@@ -26,3 +26,5 @@
 	default = current
 [help]
 	autocorrect = 1
+[clean]
+	requireForce = false
