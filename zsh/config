@@ -10,6 +10,7 @@ autoload -U ~/.zsh/functions/*(:t)
 setopt prompt_subst
 setopt correctall
 setopt autocd
+unsetopt nomatch
 
 # bash-like word movement
 autoload -U select-word-style
