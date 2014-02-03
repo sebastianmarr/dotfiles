@@ -8,8 +8,8 @@
 	b = branch
 	work = config user.email "marr@spreadshirt.net"
 	private = config user.email "mail@sebastianmarr.de"
-	l = log --pretty='%C(yellow)%h%C(green)%d%Creset %s %C(red)(%cr) %C(bold blue)<%aN>%Creset'
-	lg = log --pretty='%C(yellow)%h%C(green)%d%Creset %s %C(red)(%cr) %C(bold blue)<%aN>%Creset' --graph --all
+	l = log --oneline --decorate --all
+	lg = log --oneline --decorate --all --graph
 	dt = difftool
 	mt = mergetool
 [color]
