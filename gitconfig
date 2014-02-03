@@ -6,6 +6,7 @@
 	c = commit
 	s = status -sb
 	b = branch
+	d = diff
 	work = config user.email "marr@spreadshirt.net"
 	private = config user.email "mail@sebastianmarr.de"
 	l = log --oneline --decorate --all
