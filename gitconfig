@@ -11,7 +11,7 @@
     ps = push
 	work = config user.email "marr@spreadshirt.net"
 	private = config user.email "mail@sebastianmarr.de"
-	l = log --oneline --decorate --all
+	l = log --oneline --decorate
 	lg = log --oneline --decorate --all --graph
 	dt = difftool
 	mt = mergetool
