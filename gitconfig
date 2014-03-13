@@ -7,6 +7,8 @@
 	s = status -sb
 	b = branch
 	d = diff
+    pl = pull
+    ps = push
 	work = config user.email "marr@spreadshirt.net"
 	private = config user.email "mail@sebastianmarr.de"
 	l = log --oneline --decorate --all
