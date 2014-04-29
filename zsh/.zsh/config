@@ -2,7 +2,6 @@
 bindkey -e
 
 # autoload all custom functions
-fpath=(~/.zsh/plugins/zsh-completions/src $fpath)
 fpath=(~/.zsh/functions $fpath)
 autoload -U ~/.zsh/functions/*(:t)
 

@@ -1,6 +1,6 @@
 [ui]
 username = Sebastian Marr <mail@sebastianmarr.de>
-ignore = ~/.hgignore
+ignore = ~/.hgignore_global
 
 [extensions]
 graphlog = 
