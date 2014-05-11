@@ -11,6 +11,15 @@ Use of zsh heavily recommended.
 
 	git clone git://github.com/sebastianmarr/dotfiles ~/.dotfiles
 	cd ~/.dotfiles
+
+The simple way:
+
+    ./install.sh
+
+The manual way:
+
+    git submodule init
+    git submodule update
     stow zsh
     stow bash
     # etc...
