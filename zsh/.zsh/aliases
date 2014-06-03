@@ -11,6 +11,7 @@ alias g="git"
 alias gf="git-flow"
 alias e="subl -n"
 alias s="ssh"
+alias svim="sudo vim -u ~/.vimrc"
 
 # simple http server
 alias serve="python -m SimpleHTTPServer"
