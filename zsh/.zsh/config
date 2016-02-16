@@ -32,9 +32,6 @@ precmd() {
   vcs_info
 }
 
-# if remote, color tmux status bar
-if [ $SSH_CONNECTION ]; then tmux set-option status-bg blue &> /dev/null; fi
-
 # environment variables
 export EDITOR="vim"
 export GREP_OPTIONS='--color=auto'
