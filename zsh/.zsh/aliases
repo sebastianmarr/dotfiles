@@ -2,26 +2,13 @@
 alias ls="ls -Gh"
 alias ll="ls -l"
 alias la="ls -lA"
-alias x="exit"
 alias aci="ack -i"
 alias rmr="rm -rf"
-alias c="cd"
 alias o="open"
 alias g="git"
-alias gf="git-flow"
-alias e="atom"
-alias s="ssh"
 alias svim="sudo vim -u ~/.vimrc"
 alias be="bundle exec"
-
-# simple http server
-alias serve="python -m SimpleHTTPServer"
-
-# ruby and rails
-alias rspec="rspec --color"
-
-# commands starting with % for pasting from web
-alias %=' '
+alias top="top -u"
 
 # tell sudo to respect aliases
 alias sudo='sudo '
