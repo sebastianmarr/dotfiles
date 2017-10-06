@@ -21,7 +21,7 @@ The manual way:
     git submodule init
     git submodule update
     stow zsh
-    stow bash
+    stow tmux
     # etc...
 
 Just stow every configuration you need.
