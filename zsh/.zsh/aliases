@@ -8,7 +8,6 @@ alias o="open"
 alias g="git"
 alias svim="sudo vim -u ~/.vimrc"
 alias be="bundle exec"
-alias top="top -u"
 
 # tell sudo to respect aliases
 alias sudo='sudo '
