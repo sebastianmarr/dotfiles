@@ -8,7 +8,6 @@ autoload -U ~/.zsh/functions/*(:t)
 
 # options
 setopt prompt_subst
-setopt correctall
 setopt autocd
 unsetopt nomatch
 
