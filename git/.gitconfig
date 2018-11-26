@@ -1,37 +1,37 @@
 [user]
-	name = Sebastian Marr
+    name = Sebastian Marr
 [alias]
-	a = add
-	u = checkout
-	c = commit
-	s = status -sb
-	b = branch
-	d = diff
+    a = add
+    u = checkout
+    c = commit
+    s = status -sb
+    b = branch
+    d = diff
     pl = pull
     ps = push
-	work = config user.email "marr@spreadshirt.net"
-	private = config user.email "mail@sebastianmarr.de"
-	l = log --pretty=format:'%C(yellow)%h%Creset%C(green)%d%Creset %s %C(red)%cr %C(blue)%an%Creset' --abbrev-commit
-	lg = log --pretty=format:'%C(yellow)%h%Creset%C(green)%d%Creset %s %C(red)%cr %C(blue)%an%Creset' --abbrev-commit --all --graph
-	dt = difftool
-	mt = mergetool
+    work = config user.email "marr@spreadshirt.net"
+    private = config user.email "mail@sebastianmarr.de"
+    l = log --pretty=format:'%C(yellow)%h%Creset%C(green)%d%Creset %s %C(red)%cr %C(blue)%an%Creset' --abbrev-commit
+    lg = log --pretty=format:'%C(yellow)%h%Creset%C(green)%d%Creset %s %C(red)%cr %C(blue)%an%Creset' --abbrev-commit --all --graph
+    dt = difftool
+    mt = mergetool
 [color]
-	diff = auto
-	status = auto
-	branch = auto
+    diff = auto
+    status = auto
+    branch = auto
 [core]
-	excludesfile = ~/.gitignore_global
-	editor = vim
+    excludesfile = ~/.gitignore_global
+    editor = vim
 [apply]
-	whitespace = nowarn
+    whitespace = nowarn
 [push]
-	default = current
+    default = current
 [help]
-	autocorrect = 1
+    autocorrect = 1
 [clean]
-	requireForce = false
+    requireForce = false
 [branch]
-	autosetuprebase = always
+    autosetuprebase = always
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
