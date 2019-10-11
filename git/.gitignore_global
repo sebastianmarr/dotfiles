@@ -6,4 +6,5 @@
 *.ipr
 *.iws
 .idea/
-
+.elixir_ls/
+.vscode/
