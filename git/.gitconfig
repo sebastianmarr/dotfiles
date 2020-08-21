@@ -9,7 +9,6 @@
     d = diff
     pl = pull
     ps = push
-    work = config user.email "marr@spreadshirt.net"
     private = config user.email "mail@sebastianmarr.de"
     l = log --pretty=format:'%C(yellow)%h%Creset%C(green)%d%Creset %s %C(red)%cr %C(blue)%an%Creset' --abbrev-commit
     lg = log --pretty=format:'%C(yellow)%h%Creset%C(green)%d%Creset %s %C(red)%cr %C(blue)%an%Creset' --abbrev-commit --all --graph
