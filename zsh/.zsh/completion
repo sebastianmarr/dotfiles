@@ -1,9 +1,0 @@
-# completion
-autoload -Uz compinit
-compinit
-
-# case insensitive completion
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-
-# key-browsable suggestions
-zstyle ':completion:*' menu select
