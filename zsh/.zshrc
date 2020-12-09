@@ -14,9 +14,9 @@ select-word-style bash
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git hg svn
 zstyle ':vcs_info:*' check-for-changes true # dirty indicators
-zstyle ':vcs_info:*' stagedstr '%F{green}*%f ' # staged changes in repo
-zstyle ':vcs_info:*' unstagedstr '%F{red}*%f ' # unstaged changes
-CUSTOM_GIT_PROMPT_FORMAT='%u%c%F{red}[%F{green}%b%F{red}]%f'
+zstyle ':vcs_info:*' stagedstr '%F{green}*%f' # staged changes in repo
+zstyle ':vcs_info:*' unstagedstr '%F{red}*%f' # unstaged changes
+CUSTOM_GIT_PROMPT_FORMAT='%u%c %b'
 ACTION_PROMPT_FORMAT=$CUSTOM_GIT_PROMPT_FORMAT' %F{magenta}%a%f'
 zstyle ':vcs_info:*' formats $CUSTOM_GIT_PROMPT_FORMAT
 zstyle ':vcs_info:*' actionformats $ACTION_PROMPT_FORMAT
@@ -27,8 +27,7 @@ precmd() {
 }
 
 # prompt
-export PROMPT='%F{2}%5~
-%F{1}%%%f '
+export PROMPT='%5~ %F{blue}>%f '
 export RPROMPT='${vcs_info_msg_0_}'
 
 ### completion
