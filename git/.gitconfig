@@ -10,8 +10,8 @@
     pl = pull
     ps = push
     private = config user.email "mail@sebastianmarr.de"
-    l = log --pretty=format:'%C(yellow)%h%Creset%C(green)%d%Creset %s %C(red)%cr %C(blue)%an%Creset' --abbrev-commit
-    lg = log --pretty=format:'%C(yellow)%h%Creset%C(green)%d%Creset %s %C(red)%cr %C(blue)%an%Creset' --abbrev-commit --all --graph
+    l = log --pretty=format:'%C(blue)%h%Creset%C(yellow)%d%Creset %s %C(green)%cr %C(cyan)%an%Creset' --abbrev-commit
+    lg = log --pretty=format:'%C(blue)%h%Creset%C(yellow)%d%Creset %s %C(green)%cr %C(cyan)%an%Creset' --abbrev-commit --all --graph
     dt = difftool
     mt = mergetool
 [color]
