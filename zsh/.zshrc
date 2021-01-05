@@ -42,15 +42,12 @@ zstyle ':completion:*' menu select
 
 ### aliases
 alias ls="ls -Gh"
-alias ll="ls -l"
 alias la="ls -lA"
-alias aci="ack -i"
 alias rmr="rm -rf"
 alias o="open"
 alias g="git"
 alias t="tmux new-session -A -s 0"
 alias svim="sudo vim -u ~/.vimrc"
-alias be="bundle exec"
 alias sudo='sudo ' # tell sudo to respect aliases
 
 # use .localrc for settings specific to one system
