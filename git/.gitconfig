@@ -39,3 +39,5 @@
 	autoStash = true
 [submodule]
 	recurse = true
+[advice]
+	detachedHead = false
