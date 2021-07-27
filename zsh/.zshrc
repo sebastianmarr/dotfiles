@@ -49,6 +49,7 @@ alias g="git"
 alias t="tmux new-session -A -s 0"
 alias svim="sudo vim -u ~/.vimrc"
 alias sudo='sudo ' # tell sudo to respect aliases
+alias rbi='eval "$(rbenv init -)"'
 
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && . ~/.localrc
