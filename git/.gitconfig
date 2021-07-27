@@ -9,6 +9,7 @@
     d = diff
     pl = pull
     ps = push
+    work = config user.email "sebastian@ulysses.app"
     private = config user.email "mail@sebastianmarr.de"
     l = log --pretty=format:'%C(blue)%h%Creset%C(yellow)%d%Creset %s %C(green)%cr %C(cyan)%an%Creset' --abbrev-commit
     lg = log --pretty=format:'%C(blue)%h%Creset%C(yellow)%d%Creset %s %C(green)%cr %C(cyan)%an%Creset' --abbrev-commit --all --graph
