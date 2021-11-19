@@ -37,7 +37,5 @@
     smudge = git-media-smudge %f
 [rebase]
 	autoStash = true
-[submodule]
-	recurse = true
 [advice]
 	detachedHead = false
