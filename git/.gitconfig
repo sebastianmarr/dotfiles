@@ -41,3 +41,7 @@
 	detachedHead = false
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = true
+[gpg "ssh"]
+	allowedSignersFile = /Users/sebastian/.git_allowed_signers
