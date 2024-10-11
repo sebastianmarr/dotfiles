@@ -44,4 +44,4 @@
 [commit]
 	gpgsign = true
 [gpg "ssh"]
-	allowedSignersFile = /Users/sebastian/.git_allowed_signers
+	allowedsignersfile = ~/.git_allowed_signers
