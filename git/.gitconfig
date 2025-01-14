@@ -3,8 +3,6 @@
 [core]  
     excludesfile = ~/.gitignore_global
     editor = vim
-[user]
-    name = Sebastian Marr
 [alias]
     a = add
     u = checkout
@@ -14,8 +12,6 @@
     d = diff
     pl = pull
     ps = push
-    work = config user.email "sebastian@ulysses.app"
-    private = config user.email "mail@sebastianmarr.de"
     l = log --pretty=format:'%C(blue)%h%Creset%C(yellow)%d%Creset %s %C(green)%cr %C(cyan)%an%Creset' --abbrev-commit
     lg = log --pretty=format:'%C(blue)%h%Creset%C(yellow)%d%Creset %s %C(green)%cr %C(cyan)%an%Creset' --abbrev-commit --all --graph
     dt = difftool
@@ -40,9 +36,3 @@
 	detachedHead = false
 [init]
 	defaultBranch = main
-[commit]
-	gpgsign = true
-[gpg "ssh"]
-	allowedsignersfile = ~/.git_allowed_signers
-[gpg]
-	format = ssh
