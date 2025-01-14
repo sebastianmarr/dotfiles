@@ -1,3 +1,8 @@
+[include]
+    path = ~/.gitconfig.local
+[core]  
+    excludesfile = ~/.gitignore_global
+    editor = vim
 [user]
     name = Sebastian Marr
 [alias]
@@ -19,9 +24,6 @@
     diff = auto
     status = auto
     branch = auto
-[core]
-    excludesfile = ~/.gitignore_global
-    editor = vim
 [apply]
     whitespace = nowarn
 [push]
