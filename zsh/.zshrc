@@ -30,9 +30,13 @@ precmd() {
 export PROMPT='%5~ %F{blue}>%f '
 export RPROMPT='${vcs_info_msg_0_}'
 
-### completion
+# Completion initialization, only do it once a day to speed up shell startup
 autoload -Uz compinit
-compinit
+if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; then
+    compinit
+else
+    compinit -C
+fi
 
 # case insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
