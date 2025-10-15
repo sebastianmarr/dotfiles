@@ -16,6 +16,7 @@
     lg = log --pretty=format:'%C(blue)%h%Creset%C(yellow)%d%Creset %s %C(green)%cr %C(cyan)%an%Creset' --abbrev-commit --all --graph
     dt = difftool
     mt = mergetool
+    smu = submodule update --init --recursive
 [color]
     diff = auto
     status = auto
@@ -24,15 +25,31 @@
     whitespace = nowarn
 [push]
     default = current
+	autoSetupRemote = true
+	followTags = true
 [help]
     autocorrect = 1
 [clean]
     requireForce = false
 [branch]
     autosetuprebase = always
+	sort = -committerdate
 [rebase]
 	autoStash = true
 [advice]
 	detachedHead = false
 [init]
 	defaultBranch = main
+[column]
+	ui = auto
+[tag]
+	sort = version:refname
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
