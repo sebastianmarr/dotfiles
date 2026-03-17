@@ -8,3 +8,7 @@
 .idea/
 .elixir_ls/
 .vscode/
+.cursor/
+.claude/
+CLAUDE.md
+
