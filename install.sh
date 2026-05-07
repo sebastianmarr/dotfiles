@@ -12,4 +12,4 @@ fi
 
 git submodule init
 git submodule update
-stow tmux zsh git irb vim
+stow tmux zsh git vim
