@@ -53,3 +53,5 @@
 	prune = true
 	pruneTags = true
 	all = true
+[gpg "ssh"]
+	allowedSignersFile = ~/.git_allowed_signers
