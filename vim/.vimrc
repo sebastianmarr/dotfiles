@@ -9,4 +9,8 @@ set incsearch
 set hlsearch
 set nobackup
 set nowritebackup
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
 
